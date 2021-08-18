@@ -27,5 +27,8 @@ include_directories("/usr/include/eigen3")
 add_executable(helloWorld src/first.cpp)
 target_link_libraries(helloWorld ${OpenCV_LIBS} ${CERES_LIBRARIES})
 
+add_executable(powell src/powell.cpp)
+target_link_libraries(powell ${OpenCV_LIBS} ${CERES_LIBRARIES})
+
 # add_executable(g2oCurveFitting g2oCurveFitting.cpp)
 # target_link_libraries(g2oCurveFitting ${OpenCV_LIBS} ${G2O_CORE_LIBRARY} ${G2O_STUFF_LIBRARY})
